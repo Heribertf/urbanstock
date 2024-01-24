@@ -1,25 +1,46 @@
-# CakePHP 3
 
-/vendor/*
-/config/app.php
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# Ignore vendor directory
+/vendor/
 
-/logs/*
-!/logs/empty
+# Ignore environment configuration files
+.env
 
-# CakePHP 2
+# Ignore log files
+/log/
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# Ignore any generated files
+/build/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore configuration files that may contain sensitive information
+# config.php
+
+# Ignore Composer's autoloader files
+/vendor/autoload.php
+/vendor/composer/
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore PHPUnit test results
+/phpunit.xml
+/phpunit.xml.dist
+/tests/_output/
+
+# Ignore IDE-specific files and directories
+.idea/
+.vscode/
+
+# Ignore Composer's dependency file
+composer.lock
+
+
+notes.txt
+platform_db.sql
+platform_db (v8).sql
+platform_db (updated).sql
+event_query.sql

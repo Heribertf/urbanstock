@@ -47,3 +47,4 @@ Here are key technical aspects of procedures:
 In summary, procedures in the context of databases are powerful tools for organizing, encapsulating, and executing code logic. They provide a way to improve code structure, reusability, and maintainability, contributing to more efficient and reliable database operations.
 
 
+git pull origin main --allow-unrelated-histories
