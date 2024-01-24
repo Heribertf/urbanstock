@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Platform</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/tradingview.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="contact">
+            <a href="#" class="phone">
+              <img
+                src="assets/images/phone.svg"
+                alt="logo"
+                width="22"
+                height="22" />
+              (+254) 715 667 667
+            </a>
+            <a href="#" class="email">
+              <img
+                src="assets/images/mail.svg"
+                alt="logo"
+                width="22"
+                height="22" />
+              support@platform.co.ke
+            </a>
+          </div>
+          <div class="link-btn">
+            <a href="" class="btn btn-outline">Login</a>
+            <a href="" class="btn btn-primary">Signup</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom" data-header>
+        <div class="container">
+          <a href="#" class="logo">
+            <img
+              src="assets/images/logo-reason-svgrepo-com.svg"
+              alt="logo"
+              width="52"
+              height="52" />
+            Platform
+          </a>
+
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="index.html" class="navbar-link" data-nav-link
+                  >Homepage</a
+                >
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link" data-nav-link>Markets</a>
+              </li>
+              <li class="navbar-item">
+                <a href="Invest.html" class="navbar-link" data-nav-link
+                  >Investments</a
+                >
+              </li>
+              <li class="navbar-item">
+                <a href="machines.html" class="navbar-link" data-nav-link
+                  >Machines</a
+                >
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link" data-nav-link>About</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link" data-nav-link>News</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="nav-toggle-btn"
+            aria-label="Toggle menu"
+            data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <!-- about -->
+        <section class="section about" aria-label="about" data-section>
+          <h2 class="h2 section-title title">
+            Analyze Charts For better insights
+          </h2>
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./assets/images/Investment data-rafiki.png"
+                width="748"
+                height="436"
+                loading="lazy"
+                alt="about banner"
+                class="w-100" />
+            </figure>
+
+            <div class="about-content">
+              <h2 class="h2 section-title">Join the Community</h2>
+
+              <p class="section-text">
+                Experience a variety of trading on Bitcost. You can use various
+                types of coin transactions such as Spot Trade, Futures Trade,
+                P2P, Staking, Mining, and margin.
+              </p>
+
+              <ul class="section-list">
+                <li class="section-item">
+                  <div class="title-wrapper">
+                    <ion-icon
+                      name="checkmark-circle"
+                      aria-hidden="true"></ion-icon>
+
+                    <h3 class="h3 list-title">
+                      View real-time stock market prices
+                    </h3>
+                  </div>
+
+                  <p class="item-text">
+                    Experience a variety of trading on Bitcost. You can use
+                    various types of coin transactions such as Spot Trade,
+                    Futures Trade, P2P, Staking, Mining, and margin.
+                  </p>
+                </li>
+
+                <li class="section-item">
+                  <div class="title-wrapper">
+                    <ion-icon
+                      name="checkmark-circle"
+                      aria-hidden="true"></ion-icon>
+
+                    <h3 class="h3 list-title">
+                      Invest in your favourite stocks
+                    </h3>
+                  </div>
+
+                  <p class="item-text">
+                    Experience a variety of trading on Bitcost. You can use
+                    various types of coin transactions such as Spot Trade,
+                    Futures Trade, P2P, Staking, Mining, and margin.
+                  </p>
+                </li>
+              </ul>
+
+              <!-- <a href="#" class="btn btn-primary">Explore More</a> -->
+            </div>
+          </div>
+        </section>
+        <section class="section chart" data-section>
+          <div class="container">
+            <!-- <h2 class="h2 section-title">Chart Data</h2> -->
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <!-- <div class="tradingview-widget-copyright">
+                            <a
+                              href="https://www.tradingview.com/"
+                              rel="noopener nofollow"
+                              target="_blank"
+                              ><span class="blue-text"
+                                >Track all markets on TradingView</span
+                              ></a
+                            >
+                          </div> -->
+              <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+                async>
+                  {
+                  "symbols": [
+                    {
+                      "proName": "FOREXCOM:SPXUSD",
+                      "title": "S&P 500"
+                    },
+                    {
+                      "proName": "FOREXCOM:NSXUSD",
+                      "title": "US 100"
+                    },
+                    {
+                      "proName": "FX_IDC:EURUSD",
+                      "title": "EUR to USD"
+                    },
+                    {
+                      "proName": "BITSTAMP:BTCUSD",
+                      "title": "Bitcoin"
+                    },
+                    {
+                      "proName": "BITSTAMP:ETHUSD",
+                      "title": "Ethereum"
+                    },
+                    {
+                      "description": "Apple",
+                      "proName": "NASDAQ:AAPL"
+                    },
+                    {
+                      "description": "Nvdia",
+                      "proName": "NASDAQ:NVDA"
+                    },
+                    {
+                      "description": "Microsoft",
+                      "proName": "NASDAQ:MSFT"
+                    }
+                  ],
+                  "showSymbolLogo": true,
+                  "isTransparent": false,
+                  "displayMode": "adaptive",
+                  "colorTheme": "dark",
+                  "locale": "en"
+                }
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+            <!-- TradingView Widget BEGIN -->
+            <div
+              class="tradingview-widget-container"
+              style="height: 100%; width: 100%">
+              <div
+                class="tradingview-widget-container__widget"
+                style="width: 100%"></div>
+              <div class="tradingview-widget-copyright">
+                <a
+                  href="https://www.tradingview.com/"
+                  rel="noopener nofollow"
+                  target="_blank"
+                  ><span class="blue-text"
+                    >Track all markets on TradingView</span
+                  ></a
+                >
+              </div>
+              <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
+                async>
+                  {
+                  "container_id": "watchlist-chart-demo",
+                  "width": "100%",
+                  "height": "700",
+                  "autosize": true,
+                  "symbol": "NASDAQ:AAPL",
+                  "interval": "D",
+                  "timezone": "exchange",
+                  "theme": "dark",
+                  "style": "1",
+                  "withdateranges": true,
+                  "allow_symbol_change": true,
+                  "save_image": false,
+                  "watchlist": [
+                    "AAPL",
+                    "IBM",
+                    "TSLA",
+                    "AMD",
+                    "MSFT",
+                    "GOOG"
+                  ]
+                }
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- footer -->
+    <footer class="footer" data-section>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo-reason-svgrepo-com.svg"
+                width="50"
+                height="50"
+                alt="Cryptex logo" />
+              Platform
+            </a>
+
+            <h2 class="footer-title">Reach Out! 🤙</h2>
+
+            <a href="tel:+254715344344" class="footer-contact-link"
+              >(+254) 715 344 344</a
+            >
+
+            <a href="mailto:hello.cryptex@gmail.com" class="footer-contact-link"
+              >support@platform.co.ke</a
+            >
+
+            <address class="footer-contact-link">Nairobi, Kenya</address>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Products</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Spot</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Inverse Perpetual</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">USDT Perpetual</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Exchange</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Launchpad</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Binance Pay</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Buy Crypto</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Markets</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Tranding Fee</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Affiliate Program</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Referral Program</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">API</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Support</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Bybit Learn</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">User Feedback</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Submit a request</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">API Documentation</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Trading Rules</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">About Us</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Bybit</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Authenticity Check</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Careers</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Business Contacts</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024 Platform All Rights Reserved by
+            <a href="#" class="copyright-link">Platform</a>
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <!-- 
+          - ionicon link
+        -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

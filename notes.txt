@@ -1,0 +1,49 @@
+sudo ./bin/mysql_upgrade -u root -p (used to solve event issues - initializing system tables)
+
+In the context of databases and programming, a procedure is a precompiled collection of one or more SQL statements or a set of procedural statements (code) that perform a specific task or a set of tasks. Procedures are used to encapsulate and organize code logic, making it reusable and more manageable.
+
+Here are key technical aspects of procedures:
+
+    Definition:
+        A procedure is typically defined within a database management system, and its code is stored in the database.
+        Procedures can be written in SQL, PL/SQL (Procedural Language/SQL), T-SQL (Transact-SQL), or other procedural languages depending on the database system.
+
+    Encapsulation:
+        Procedures encapsulate a sequence of SQL statements or procedural code into a single, named unit.
+        This encapsulation helps in modularizing code, making it more modular, reusable, and easier to maintain.
+
+    Parameters:
+        Procedures can accept input parameters, allowing them to be more flexible and adaptable to different scenarios.
+        Input parameters can be used to customize the behavior of the procedure when it is called.
+
+    Return Values:
+        Procedures can return values to the calling code or application.
+        The returned values may be a result set, a single value, or an output parameter.
+
+    Transaction Control:
+        Procedures often include transaction control statements (e.g., COMMIT, ROLLBACK, START TRANSACTION) to manage the integrity of the database.
+        This ensures that a set of related operations either all succeed or fail together.
+
+    Security:
+        Procedures can be granted specific permissions, allowing fine-grained control over who can execute them and what operations they can perform.
+        This helps in enforcing security policies within the database.
+
+    Reuse and Modularity:
+        Procedures promote code reuse by allowing the same logic to be invoked from multiple places in an application or by different applications.
+        This modular approach improves code organization and maintenance.
+
+    Performance:
+        Procedures are precompiled and stored in a compiled form within the database, which can enhance execution speed compared to executing ad-hoc SQL statements.
+        This is particularly beneficial for frequently executed or complex operations.
+
+    Error Handling:
+        Procedures can include error-handling mechanisms to gracefully manage exceptions or unexpected situations during execution.
+        This enhances the robustness and reliability of the database operations.
+
+    Maintenance:
+        Procedures can be updated or modified independently of the application code that calls them.
+        This separation of concerns simplifies maintenance efforts and allows for changes to be made without affecting the entire application.
+
+In summary, procedures in the context of databases are powerful tools for organizing, encapsulating, and executing code logic. They provide a way to improve code structure, reusability, and maintainability, contributing to more efficient and reliable database operations.
+
+

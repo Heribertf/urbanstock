@@ -1,0 +1,15 @@
+/* .tradingview-widget-container {
+    padding-block: 20px;
+} */
+
+.chart {
+    background-color: hsl(240, 5%, 8%);
+}
+
+.chart :is(.section-title) {
+    text-align: center;
+}
+
+.about .title {
+    text-align: center;
+}
